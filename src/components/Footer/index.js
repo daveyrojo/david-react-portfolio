@@ -9,7 +9,7 @@ class Footer extends Component {
     render() {
         return (
           <Card border="primary" bg="dark" fixed="bottom">
-            <Container>
+            <Container fluid>
               <Card.Body></Card.Body>
             </Container>
           </Card>

@@ -4,14 +4,14 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 import NavBar from "./components/Nav";
 import Footer from "./components/Footer";
-import Home from "./pages/Home";
+import AboutMe from "./pages/AboutMe";
 // import Footer from ".components/Footer";
 
 function App() {
   return (
     <Router>
       <NavBar />
-        <Home />
+        <AboutMe />
       <Footer />
     </Router>
   );
