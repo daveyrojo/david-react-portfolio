@@ -1,0 +1,26 @@
+[
+    {
+        "id": 1,
+        "title": "Just Your Teams" ,
+        "image": "https://imgur.com/a/qRGEgnW" ,
+        "description": ""
+    },
+    {
+        "id": 2,
+        "title": "Fitness Tracker" ,
+        "image": "https://imgur.com/DiA9xhg" ,
+        "description": ""
+    },
+    {
+        "id": 3,
+        "title": "Coin Finder",
+        "image": "https://imgur.com/wbTRMM1" ,
+        "description": ""
+    },
+    {
+        "id": 4,
+        "title": "Daily Planner",
+        "image": "https://imgur.com/6PRo2Hp" ,
+        "description": ""
+    }
+]

@@ -1,8 +1,12 @@
 import React from "react";
 import { Card, Row, Col, Container } from "react-bootstrap";
-import speech from "./speech.jpg";
+import speech from "./speech.jpg"
 
-function AboutMeCard() {
+
+//need to try and use props
+
+function AboutMeCard(props) {
+  
   return (
     <Container bg='primary'>
       <Card border="primary">
