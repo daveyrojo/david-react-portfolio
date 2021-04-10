@@ -7,14 +7,14 @@ class NavBar extends Component {
 
     render() {
       return (
-        <Container>
-          <Navbar>
+        <Navbar expand="lg" variant="dark" bg="dark" sticky="top">
+          <Container>
             <Navbar.Brand>David Eldridge.</Navbar.Brand>
             <Nav.Link href="#">Home.</Nav.Link>
             <Nav.Link href="#">About Me.</Nav.Link>
             <Nav.Link href="#">Projects.</Nav.Link>
-          </Navbar>
-        </Container>
+          </Container>
+        </Navbar>
       );
     }
 
