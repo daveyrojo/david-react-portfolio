@@ -14,22 +14,24 @@ function Home() {
   };
 
   return (
-    <Container>
-      <Button
-        bg="primary"
-        onClick={expandHome}
-        aria-controls="collapse"
-        aria-expanded={open}
-        centered
-      >
-        {click}
-      </Button>
+    <div>
+      <Container>
+        <Button
+          bg="primary"
+          onClick={expandHome}
+          aria-controls="collapse"
+          aria-expanded={open}
+          centered
+        >
+          {click}
+        </Button>
+      </Container>
       <Collapse in={open}>
         <div id="collapse">
           <AboutMeCard />
         </div>
       </Collapse>
-    </Container>
+    </div>
   );
 }
 

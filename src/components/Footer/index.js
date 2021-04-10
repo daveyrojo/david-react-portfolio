@@ -4,11 +4,11 @@ import { Card, Container } from "react-bootstrap";
 import "./style.css";
 
 //footer card has rounded corners - do not want them rounded
-//Border needs to be wider
+
 class Footer extends Component {
     render() {
         return (
-          <Card border="primary" bg="dark" fixed="bottom">
+          <Card bg="dark" fixed="bottom">
             <Container fluid>
               <Card.Body></Card.Body>
             </Container>
