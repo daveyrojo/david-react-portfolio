@@ -1,19 +1,18 @@
 import React, { Component, useState } from "react";
 import { Row, Container, Button, Collapse, Card, Col } from "react-bootstrap";
-import AboutMeCard from "../components/AboutMeCard"
+import AboutMeCard from "../components/AboutMeCard";
 import Project from "../components/Project";
-import Projects from "../projects.json"
+import Projects from "../projects.json";
 
 //Probably need to import react-transition-group
 function AboutMe() {
-  
   const [open, setOpen] = useState(false);
 
   const [click, setClick] = useState("Click Here to Meet Me!");
 
   const expandAboutMe = () => {
     setOpen(!open);
-    setClick("I've Been Clicked!")
+    setClick("I've Been Clicked!");
   };
 
   return (
@@ -36,7 +35,7 @@ function AboutMe() {
             </Col>
             <Col>
               <Card.Title>{Projects[0].title}</Card.Title>
-              <Project />
+              <Project Projects={Projects} />
             </Col>
           </Row>
         </Container>
