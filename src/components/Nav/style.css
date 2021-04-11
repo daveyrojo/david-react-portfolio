@@ -4,3 +4,7 @@ Nav {
     text: white;
     text-align: center;
 }
+
+Nav.brand {
+    text: white;
+}

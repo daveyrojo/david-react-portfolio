@@ -1,5 +1,5 @@
 import React from "react";
-import { Image, Card, Row, Col, Container } from "react-bootstrap";
+import { Image, Card, Container } from "react-bootstrap";
 import speech from "./speech.jpg";
 
 //need to try and use props

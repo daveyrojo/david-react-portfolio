@@ -2,25 +2,21 @@
     {
         "id": 1,
         "title": "speech",
-        "img": "https://imgur.com/OOUTA5F",
-        "url": ""
+        "img": "https://i.imgur.com/OOUTA5F.jpg"
     },
     {
         "id": 2,
         "title": "scarf" ,
-        "img": "https://imgur.com/M8uV6vj",
-        "url": ""
+        "img": "https://i.imgur.com/M8uV6vj.jpg"
     },
     {
         "id": 3,
         "title": "timbers",
-        "img": "https://imgur.com/vYNZiEz",
-        "url": ""
+        "img": "https://i.imgur.com/vYNZiEz.jpg"
     },
     {
         "id": 4,
         "title": "dad",
-        "img": "https://imgur.com/2dxLX1V",
-        "url": ""
+        "img": "https://i.imgur.com/2dxLX1V.jpg"
     }
 ]
