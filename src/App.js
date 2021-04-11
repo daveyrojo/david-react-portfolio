@@ -5,7 +5,8 @@ import "./App.css";
 import NavBar from "./components/Nav";
 import Footer from "./components/Footer";
 import AboutMe from "./pages/AboutMe";
-// import Footer from ".components/Footer";
+
+
 
 function App() {
   return (

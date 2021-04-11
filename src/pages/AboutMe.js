@@ -1,13 +1,12 @@
 import React, { Component, useState } from "react";
-import { Container, Button, Collapse, Card } from "react-bootstrap";
+import { Row, Container, Button, Collapse, Card, Col } from "react-bootstrap";
 import AboutMeCard from "../components/AboutMeCard"
-import images from "../images.json";
+import Project from "../components/Project";
+import Projects from "../projects.json"
 
 //Probably need to import react-transition-group
 function AboutMe() {
   
-  const photos = images;
-
   const [open, setOpen] = useState(false);
 
   const [click, setClick] = useState("Click Here to Meet Me!");
@@ -19,21 +18,28 @@ function AboutMe() {
 
   return (
     <div>
-      <Container>
-        <Button
-          bg="primary"
-          onClick={expandAboutMe}
-          aria-controls="collapse"
-          aria-expanded={open}
-          centered
-        >
-          {click}
-        </Button>
-      </Container>
+      <Button
+        bg="primary"
+        onClick={expandAboutMe}
+        aria-controls="collapse"
+        aria-expanded={open}
+      >
+        {click}
+      </Button>
+
       <Collapse in={open}>
-        <div id="collapse">
-          <AboutMeCard />
-        </div>
+        <Container id="collapse">
+          <Row>
+            <Col>
+              <Card.Title>Nice to meet you as well!</Card.Title>
+              <AboutMeCard />
+            </Col>
+            <Col>
+              <Card.Title>{Projects[0].title}</Card.Title>
+              <Project />
+            </Col>
+          </Row>
+        </Container>
       </Collapse>
     </div>
   );
