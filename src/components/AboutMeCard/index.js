@@ -1,8 +1,5 @@
 import React from "react";
 import { Image, Card, Container } from "react-bootstrap";
-import speech from "./speech.jpg";
-
-//need to try and use props
 
 function AboutMeCard(props) {
   return (
@@ -11,7 +8,7 @@ function AboutMeCard(props) {
         height="150"
         width="150"
         variant="top"
-        src={speech}
+        src={props.images[0].img}
         roundedCircle
         fluid
       />

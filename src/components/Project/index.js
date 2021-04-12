@@ -1,5 +1,4 @@
 import React from "react";
-import { Route } from "react-router-dom";
 import { Container, Card, Image } from "react-bootstrap";
 
 import "./style.css";
