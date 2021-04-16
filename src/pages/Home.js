@@ -13,7 +13,7 @@ class Home extends Component {
   render() {
     return (
       <Container>
-        <ModalCard />
+        {/* <ModalCard /> */}
         <Row>
           <Col>
           {this.state.Projects.map(Proj => (
