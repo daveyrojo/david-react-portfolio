@@ -7,13 +7,12 @@ import NavBar from "./components/Nav";
 import Footer from "./components/Footer";
 import AboutMe from "./pages/AboutMe";
 import Home from "./pages/Home";
-import ModalCard from "./components/ModalCard";
+// import ModalCard from "./components/ModalCard";
 
 function App() {
   return (
     <Router>
       <NavBar />
-      <ModalCard />
       <Switch>
         <Route to="/" exact path>
           <Home />
