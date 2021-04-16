@@ -5,9 +5,9 @@ import Contact from "../Contact";
 import Images from "../../images.json";
 
 
-function ModalCard() {
+export function ModalCard() {
 
-  const [show, setShow] = useState('true');
+  const [show, setShow] = useState('false');
 
   const handleClose = () => setShow(false);
 
@@ -21,25 +21,30 @@ function ModalCard() {
         <Modal.Header closeButton>
           <Modal.Title>Hey! It's So Nice To Meet You!</Modal.Title>
         </Modal.Header>
-        <Card fluid>
-          <Modal.Body>
+        <Modal.Body>
+          <Card fluid>
             Welcome to my online portfolio! To make this convenient right here
             is all of my resume and contact:
-            <Card.Image src={Images[1].img} width="100" height="auto" fluid roundedCircle />
-            <Card.Image src="https://i.imgur.com/66uKXXn.jpg" fluid />
+            <Card.Img
+              src={Images[1].img}
+              width="100"
+              height="auto"
+              fluid
+              roundedCircle
+            />
+            <Card.Img src="https://i.imgur.com/66uKXXn.jpg" fluid />
             <Contact />
-          </Modal.Body>
-        </Card>
+          </Card>
+        </Modal.Body>
         <Modal.Footer>
           <Button variant="secondary" onClick={handleClose}>
             Take A Closer Look!
           </Button>
         </Modal.Footer>
       </Modal>
-   
-  );
+    );
 }
 
 
 
-export default ModalCard;
+// export default render(<ModalCard/>);
