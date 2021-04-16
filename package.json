@@ -1,5 +1,4 @@
 {
-  "homepage": "https://daveyrojo/david-react-portfolio.git",
   "name": "david-eldridge",
   "version": "0.1.0",
   "private": true,
@@ -16,6 +15,7 @@
     "react-router": "^5.2.0",
     "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.3",
+    "react-strap": "0.0.1",
     "react-transition-group": "^4.4.1",
     "shuffle-array": "^1.0.1",
     "web-vitals": "^1.1.1"
