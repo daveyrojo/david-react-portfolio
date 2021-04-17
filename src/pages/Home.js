@@ -15,7 +15,7 @@ class Home extends Component {
       <Container>
         <ModalCard />
         <Row large={3} medium={4} small={12}>
-          <Col>
+          <Col large={3} medium={4} small={12}>
           {this.state.Projects.map(Proj => (
             <Project Projects={Proj} />
           ))};
