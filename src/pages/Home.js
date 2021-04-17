@@ -15,9 +15,9 @@ class Home extends Component {
       <Container>
         <ModalCard />
        
-          {/* {this.state.Projects.map(Proj => (
+          {this.state.Projects.map(Proj => (
             <Project Projects={Proj} />
-          ))}; */}
+          ))};
           
       </Container>
     );
