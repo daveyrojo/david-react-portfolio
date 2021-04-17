@@ -1,7 +1,7 @@
 import React from "react";
 import { Row, Container, Card, Col } from "react-bootstrap";
 import AboutMeCard from "../components/AboutMeCard";
-import Project from "../components/Project";
+import { RandomProject } from "../components/Project";
 import Projects from "../projects.json";
 
 function AboutMe() {
@@ -20,7 +20,7 @@ function AboutMe() {
           </Col>
           <Col>
             <Card.Title>{randomProject.title}</Card.Title>
-            <Project Projects={randomProject} />
+            <RandomProject Projects={randomProject} />
           </Col>
         </Row>
       </Container>

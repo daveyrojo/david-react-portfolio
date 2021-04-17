@@ -1,7 +1,6 @@
 
 import React, {  useState } from "react";
 import { Card, Button, Modal, Row, Col } from "react-bootstrap";
-import Contact from "../Contact";
 import Images from "../../images.json";
 
 

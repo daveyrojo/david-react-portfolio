@@ -6,7 +6,7 @@ import NavBar from "./components/Nav";
 import Footer from "./components/Footer";
 import AboutMe from "./pages/AboutMe";
 import Home from "./pages/Home";
-// import ModalCard from "./components/ModalCard";
+import Projects from "./pages/Projects";
 
 function App() {
   return (
@@ -18,6 +18,9 @@ function App() {
         </Route>
         <Route exact path="/aboutme">
           <AboutMe />
+        </Route>
+        <Route exact path="/projects">
+          <Projects />
         </Route>
       </Switch>
       <Footer />
