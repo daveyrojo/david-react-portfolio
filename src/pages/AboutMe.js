@@ -5,9 +5,10 @@ import Project from "../components/Project";
 import Projects from "../projects.json";
 
 function AboutMe() {
+  
   const projects = Object.values(Projects);
   const randomProject = projects[parseInt(Math.random() * projects.length)];
-  console.log(randomProject);
+  
 
   return (
     <div>

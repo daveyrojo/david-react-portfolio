@@ -1,6 +1,6 @@
 import React from "react";
 import { Image, Card, Container } from "react-bootstrap";
-
+import Images from "../../images.json";
 function AboutMeCard(props) {
   return (
     <Container>
@@ -8,7 +8,7 @@ function AboutMeCard(props) {
         height="150"
         width="150"
         variant="top"
-        src={props.images[0].img}
+        src={Images[0].img}
         roundedCircle
         fluid
       />

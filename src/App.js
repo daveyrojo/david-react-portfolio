@@ -14,11 +14,11 @@ function App() {
     <Router>
       <NavBar />
       <Switch>
-        <Route to="/" exact path>
+        <Route exact path="/">
           <Home />
         </Route>
-        <Route to="/aboutme" exact path>
-          <AboutMe images={Images} />
+        <Route exact path="/aboutme">
+          <AboutMe />
         </Route>
       </Switch>
       <Footer />
