@@ -1,6 +1,6 @@
 
 import React, {  useState } from "react";
-import { Card, Button, Modal, Row } from "react-bootstrap";
+import { Card, Button, Modal, Row, Col } from "react-bootstrap";
 import Contact from "../Contact";
 import Images from "../../images.json";
 
@@ -18,36 +18,49 @@ export function ModalCard() {
         backdrop="static"
         keyboard={false}
       >
-        <Modal.Header closeButton>
+        <Modal.Header>
           <Modal.Title style={{ marginLeft: 80 }}>
             Hey! It's So Nice To Meet You!
           </Modal.Title>
         </Modal.Header>
-        <Modal.Body>
-          <Card style={{ textAlign: "center" }} fluid>
-            Welcome to my online portfolio!
-            <Card.Text>
-              To make this convenient right here is all of my resume and
-              contact:
-            </Card.Text>
-            <Row style={{justifyContent: 'center', marginBottom: 50}}>
-              <Card.Img
-                src={Images[1].img}
-                style={{ width: 200, height: 300, marginRight: 50 }}
-                fluid
-                roundedCircle
-              />
-              <Card.Img
-                style={{ width: 200, height: 300 }}
-                src="https://i.imgur.com/66uKXXn.jpg"
-                fluid
-              />
-            </Row>
-            <Contact />
-          </Card>
-        </Modal.Body>
-        <Modal.Footer>
-          <Button variant="secondary" onClick={handleClose}>
+
+        <Card style={{ textAlign: "center" }} fluid>
+          Welcome to my online portfolio!
+          <Card.Text>
+            To make this convenient right here is all of my resume and contact:
+          </Card.Text>
+          <Row style={{ justifyContent: "flex", marginBottom: 15 }}>
+            <Card.Img
+              src={Images[1].img}
+              style={{
+                width: 240,
+                height: 300,
+                marginRight: 10,
+                paddingLeft: 25,
+              }}
+              fluid
+              roundedCircle
+            />
+
+            <Col>
+              <a
+                style={{ color: "gray", fontSize: 10 }}
+                href="https://pdfhost.io/v/4ExQmXzuh_resumeRDpdf.pdf"
+                download
+              >
+                <Card.Img
+                  style={{ width: 240, height: 300 }}
+                  src="https://i.imgur.com/66uKXXn.jpg"
+                  fluid
+                />
+                Click to Download
+              </a>
+            </Col>
+          </Row>
+        </Card>
+
+        <Modal.Footer style={{ justifyContent: "center" }}>
+          <Button variant="primary" onClick={handleClose} center>
             Take A Closer Look!
           </Button>
         </Modal.Footer>
