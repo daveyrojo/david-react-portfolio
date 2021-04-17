@@ -8,7 +8,7 @@ import "./style.css";
 class Footer extends Component {
     render() {
         return (
-          <Card bg="dark" fixed="bottom">
+          <Card  bg="dark" fixed="bottom">
             <Container fluid>
               <Card.Body>
                 <Contact />
