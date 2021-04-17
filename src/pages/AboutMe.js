@@ -1,60 +1,49 @@
-import React from "react";
-import { Row, Container, Card, Col } from "react-bootstrap";
-import { Link } from "react-router-dom";
-import AboutMeCard from "../components/AboutMeCard";
+import React, { Component } from "react";
+import { Card, Row, Col } from "react-bootstrap";
+import { AboutMeCard, AboutMeText } from "../components/AboutMeCard";
 import { RandomProject } from "../components/Project";
+import Images from "../images.json";
 import Projects from "../projects.json";
 
+function AboutMe () {
 
-function AboutMe() {
- 
-  const projects = Object.values(Projects);
-  const randomProject = projects[parseInt(Math.random() * projects.length)];
-
-  return (
-    <div>
-      <Container id="collapse">
-        <Row>
-          <Col lg={5}>
-            <AboutMeCard />
-          </Col>
-          <Col lg={5}>
-            <h5 style={{ marginLeft: "1em", marginTop: "1em" }}>
-              Here is a project from the projects page!
-            </h5>
-            <RandomProject project={randomProject} />
-          </Col>
-          <Col lg={2} style={{ align: "center" }}>
-            <div style={{ textAlign: "center" }}>
-              <p
-                style={{
-                  paddingLeft: "4em",
-                  marginTop: "1.5em",
-                }}
-              >
-                My Resume:
-              </p>
-              <Link
-                style={{ color: "gray", fontSize: 10 }}
-                type="application/pdf"
-                rel="noreferrer"
-                target="_blank"
-                href="https://pdfhost.io/v/4ExQmXzuh_resumeRDpdf.pdf"
-                download="David-V-Eldridge-Resume"
-              >
-                <Card.Img
-                  className="resumeLink"
-                  style={{ width: 300, height: 400 }}
-                  src="https://i.imgur.com/66uKXXn.jpg"
-                  fluid
-                />
-              </Link>
-            </div>
-          </Col>
-        </Row>
-      </Container>
-    </div>
-  );
-}
+    return (
+      <Row style={{ margin: "0" }}>
+        <Col lg={3}>
+          <h5 style={{ textAlign: "center", marginTop: "2.5em" }}>Projects:</h5>
+          <RandomProject project={Projects[0]} />
+          <RandomProject project={Projects[1]} />
+        </Col>
+        <Col lg={6}>
+          <h3 style={{ textAlign: "center", marginTop: "1.5em" }}>
+            A Little Bit About Me:
+          </h3>
+          <AboutMeCard image={Images[2].img} text={Images[2].text} />
+          <AboutMeCard image={Images[3].img} text={Images[3].text} />
+        </Col>
+        <Col lg={2}>
+          <h5 style={{ textAlign: "center", marginTop: "2.5em" }}>Resume:</h5>
+          <Card style={{ textAlign: "center" }} fluid>
+            <a
+              style={{ color: "gray", fontSize: 10 }}
+              type="application/pdf"
+              rel="noreferrer"
+              target="_blank"
+              href="https://pdfhost.io/v/4ExQmXzuh_resumeRDpdf.pdf"
+              download="David-V-Eldridge-Resume"
+            >
+              <Card.Img
+                className="resumeLink"
+                style={{ width: 240, height: 300 }}
+                src="https://i.imgur.com/66uKXXn.jpg"
+                fluid
+              />
+              Click to Download
+            </a>
+          </Card>
+        </Col>
+      </Row>
+    );
+  }
 
 export default AboutMe;

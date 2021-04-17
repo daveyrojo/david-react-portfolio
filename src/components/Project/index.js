@@ -4,6 +4,7 @@ import { Card, Col } from "react-bootstrap";
 import "./style.css";
 
 export function RandomProject(props) {
+  
   return (
     <Card className="randomCard">
       <Link className="Link" href={props.project.url}>
