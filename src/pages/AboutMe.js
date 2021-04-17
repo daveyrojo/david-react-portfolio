@@ -4,23 +4,21 @@ import AboutMeCard from "../components/AboutMeCard";
 import { RandomProject } from "../components/Project";
 import Projects from "../projects.json";
 
+
 function AboutMe() {
-  
+ 
   const projects = Object.values(Projects);
   const randomProject = projects[parseInt(Math.random() * projects.length)];
-  
 
   return (
     <div>
       <Container id="collapse">
         <Row>
-          <Col>
-            <Card.Title>Nice to meet you as well!</Card.Title>
+          <Col lg={6}>
             <AboutMeCard />
           </Col>
-          <Col>
-            <Card.Title>{randomProject.title}</Card.Title>
-            <RandomProject Projects={randomProject} />
+          <Col lg={6}>
+            <RandomProject project={randomProject} />
           </Col>
         </Row>
       </Container>

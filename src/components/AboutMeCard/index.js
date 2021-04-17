@@ -1,9 +1,11 @@
 import React from "react";
 import { Image, Card, Container } from "react-bootstrap";
 import Images from "../../images.json";
-function AboutMeCard(props) {
+import "./style.css";
+
+function AboutMeCard() {
   return (
-    <Container>
+    <Container c>
       <Image
         height="150"
         width="150"
@@ -12,7 +14,7 @@ function AboutMeCard(props) {
         roundedCircle
         fluid
       />
-      <Card.Text>
+      <p>
         Well for starters my name, clearly, is David Eldridge! I have 12 years
         of management experience - close to half my life! - and I am so excited
         to bring those soft skills to the tech world. After graduating college
@@ -35,7 +37,7 @@ function AboutMeCard(props) {
         Boot Camp program and help as many fellow students as possible. If
         you've made it this far thank you for your time and I hope to be working
         with you in the future!
-      </Card.Text>
+      </p>
     </Container>
   );
 }
