@@ -1,3 +1,7 @@
+.Link:hover {
+    text-decoration: none;
+}
+
 .projCard {
     text-align: center;
     align-items: center;
@@ -5,6 +9,19 @@
     margin-bottom: 6.25em;
     margin-right: 4.125em;
     margin-left: 0em;
+    overflow:hidden;
+}
+
+.projCard:hover {
+    transform: scale(1.25);
+
+}
+
+.cardTitle {
+    text-decoration: underline;
+}
+.cardText {
+    color: black;
 }
 
 .projImg {

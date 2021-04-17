@@ -1,5 +1,6 @@
 
 import React, {  useState } from "react";
+import { Link }  from "react-router-dom";
 import { Card, Button, Modal, Row, Col } from "react-bootstrap";
 import Images from "../../images.json";
 
@@ -44,8 +45,11 @@ export function ModalCard() {
             <Col>
               <a
                 style={{ color: "gray", fontSize: 10 }}
+                type="application/pdf"
+                rel="noreferrer"
+                target="_blank"
                 href="https://pdfhost.io/v/4ExQmXzuh_resumeRDpdf.pdf"
-                download
+                download="David-V-Eldridge-Resume"
               >
                 <Card.Img
                   style={{ width: 240, height: 300 }}
