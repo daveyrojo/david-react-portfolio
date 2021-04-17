@@ -17,7 +17,7 @@ function Contact() {
             GitHub.
           </a>
           <a
-            style={{ color: "purple", marginRight: 45 }}
+            style={{ color: "primary", marginRight: 45 }}
             href="mailto: d.vincenteldridge@gmail.com"
           >
             E-mail.

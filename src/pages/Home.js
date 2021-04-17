@@ -14,13 +14,11 @@ class Home extends Component {
     return (
       <Container>
         <ModalCard />
-        <Row large={3} medium={4} small={12}>
-          <Col large={3} medium={4} small={12}>
-          {this.state.Projects.map(Proj => (
+       
+          {/* {this.state.Projects.map(Proj => (
             <Project Projects={Proj} />
-          ))};
-          </Col>
-        </Row>
+          ))}; */}
+          
       </Container>
     );
   }
