@@ -5,8 +5,8 @@ import "./style.css";
 
 function AboutMeCard() {
   return (
-    <Container c>
-      <Image
+    <div className="aboutMe">
+      <Image className="aboutMeImage"
         height="150"
         width="150"
         variant="top"
@@ -38,7 +38,7 @@ function AboutMeCard() {
         you've made it this far thank you for your time and I hope to be working
         with you in the future!
       </p>
-    </Container>
+    </div>
   );
 }
 

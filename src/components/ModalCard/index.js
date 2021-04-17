@@ -1,6 +1,5 @@
 
 import React, {  useState } from "react";
-import { Link }  from "react-router-dom";
 import { Card, Button, Modal, Row, Col } from "react-bootstrap";
 import Images from "../../images.json";
 
@@ -16,7 +15,8 @@ export function ModalCard() {
         show={show}
         onHide={handleClose}
         backdrop="static"
-        keyboard={false}
+        keyboard={true}
+        animation
       >
         <Modal.Header>
           <Modal.Title style={{ marginLeft: 80 }}>
@@ -43,7 +43,7 @@ export function ModalCard() {
             />
 
             <Col>
-              <a
+              <a 
                 style={{ color: "gray", fontSize: 10 }}
                 type="application/pdf"
                 rel="noreferrer"
@@ -51,7 +51,7 @@ export function ModalCard() {
                 href="https://pdfhost.io/v/4ExQmXzuh_resumeRDpdf.pdf"
                 download="David-V-Eldridge-Resume"
               >
-                <Card.Img
+                <Card.Img className="resumeLink"
                   style={{ width: 240, height: 300 }}
                   src="https://i.imgur.com/66uKXXn.jpg"
                   fluid

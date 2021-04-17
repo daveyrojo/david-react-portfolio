@@ -5,10 +5,9 @@ import "./style.css";
 
 export function RandomProject(props) {
   return (
-      <Card className="projCard">
-        <Card.Title className="cardTitle">
-          <a href={props.project.url}>{props.project.title}</a>
-        </Card.Title>
+    <Card className="randomCard">
+      <Link className="Link" href={props.project.url}>
+        <Card.Title className="cardTitle">{props.project.title}</Card.Title>
         <Card.Img
           className="projImg"
           variant="top"
@@ -16,8 +15,9 @@ export function RandomProject(props) {
           rounded
           fluid
         />
-        <Card.Text>{props.project.description}</Card.Text>
-      </Card>
+        <Card.Text className="cardText">{props.project.description}</Card.Text>
+      </Link>
+    </Card>
   );
 }
 
