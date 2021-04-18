@@ -1,6 +1,6 @@
-import React, { Component } from "react";
+import React from "react";
 import { Card, Row, Col } from "react-bootstrap";
-import { AboutMeCard, AboutMeText } from "../components/AboutMeCard";
+import { AboutMeCard } from "../components/AboutMeCard";
 import { RandomProject } from "../components/Project";
 import Images from "../images.json";
 import Projects from "../projects.json";
@@ -30,7 +30,6 @@ function AboutMe () {
               rel="noreferrer"
               target="_blank"
               href="https://pdfhost.io/v/4ExQmXzuh_resumeRDpdf.pdf"
-              download="David-V-Eldridge-Resume"
             >
               <Card.Img
                 className="resumeLink"

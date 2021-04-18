@@ -3,7 +3,7 @@ import { Row, Container, Card, Col } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import HomeCard from "../components/HomeCard";
 import { RandomProject } from "../components/Project";
-import { ModalCard } from "../components/ModalCard";
+
 import Projects from "../projects.json";
 
 
@@ -41,7 +41,6 @@ function Home() {
                 rel="noreferrer"
                 target="_blank"
                 href="https://pdfhost.io/v/4ExQmXzuh_resumeRDpdf.pdf"
-                download="David-V-Eldridge-Resume"
               >
                 <Card.Img
                   className="resumeLink"

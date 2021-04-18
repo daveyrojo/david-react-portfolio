@@ -7,10 +7,12 @@ import Footer from "./components/Footer";
 import AboutMe from "./pages/AboutMe";
 import Home from "./pages/Home";
 import Projects from "./pages/Projects";
+import { ModalCard } from "./components/ModalCard";
 
 function App() {
   return (
     <Router>
+      <ModalCard />
       <NavBar />
       <Switch>
         <Route exact path="/">

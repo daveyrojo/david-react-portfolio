@@ -1,14 +1,23 @@
 
-import React, {  useState } from "react";
+import React, {  useState, useEffect } from "react";
 import { Card, Button, Modal, Row, Col } from "react-bootstrap";
 import Images from "../../images.json";
 
 
 export function ModalCard() {
 
-  const [show, setShow] = useState('false');
+  const [show, setShow] = useState(true);
 
-  const handleClose = () => setShow(false);
+  useEffect(() => {
+    let userVisited = sessionStorage.getItem('visited');
+    if (userVisited) {
+      setShow(false);
+    }
+  }, [])
+  const handleClose = () => {
+    setShow(false);
+    sessionStorage.setItem('visited', 'true')
+  }
 
     return (
       <Modal
