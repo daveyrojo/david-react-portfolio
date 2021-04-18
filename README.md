@@ -11,3 +11,6 @@ My portfolio meets all requirements as does my GitHub.
 ![Modal](./imgs/modal.png)
 ![Home](./imgs/home.png)
 ![Projects](./imgs/projects.png)
+
+## Links
+[GitHub](https://github.com/daveyrojo/david-react-portfolio)
