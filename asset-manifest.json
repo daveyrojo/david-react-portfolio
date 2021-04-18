@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/david-react-portfolio/static/css/main.582d3416.chunk.css",
+    "main.js": "/david-react-portfolio/static/js/main.81e96789.chunk.js",
+    "main.js.map": "/david-react-portfolio/static/js/main.81e96789.chunk.js.map",
+    "runtime-main.js": "/david-react-portfolio/static/js/runtime-main.e3b0aa30.js",
+    "runtime-main.js.map": "/david-react-portfolio/static/js/runtime-main.e3b0aa30.js.map",
+    "static/css/2.4c97ca4f.chunk.css": "/david-react-portfolio/static/css/2.4c97ca4f.chunk.css",
+    "static/js/2.33407f0c.chunk.js": "/david-react-portfolio/static/js/2.33407f0c.chunk.js",
+    "static/js/2.33407f0c.chunk.js.map": "/david-react-portfolio/static/js/2.33407f0c.chunk.js.map",
+    "index.html": "/david-react-portfolio/index.html",
+    "static/css/2.4c97ca4f.chunk.css.map": "/david-react-portfolio/static/css/2.4c97ca4f.chunk.css.map",
+    "static/css/main.582d3416.chunk.css.map": "/david-react-portfolio/static/css/main.582d3416.chunk.css.map",
+    "static/js/2.33407f0c.chunk.js.LICENSE.txt": "/david-react-portfolio/static/js/2.33407f0c.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.e3b0aa30.js",
+    "static/css/2.4c97ca4f.chunk.css",
+    "static/js/2.33407f0c.chunk.js",
+    "static/css/main.582d3416.chunk.css",
+    "static/js/main.81e96789.chunk.js"
+  ]
+}
