@@ -11,7 +11,7 @@ import { ModalCard } from "./components/ModalCard";
 
 function App() {
   return (
-    <Router>
+    <Router basename="/david-portfolio">
       <ModalCard />
       <NavBar />
       <Switch>
